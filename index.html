@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EazyPayouts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+        <img src="logo.png">
+      <div class="logo">EazyPayouts</div>
+      <nav>
+        <ul>
+          <li>Loads</li>
+          <li>Statements</li>
+          <li>Transactions</li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="main-content">
+      <header class="header">
+        <select id="companySelect">
+          <option value="">Select Company</option>
+        </select>
+        <select id="accountSelect">
+          <option value="">Select Account</option>
+        </select>
+      </header>
+      <div class="balance">
+        <h2>Available Balance</h2>
+        <p id="balanceAmount">Select an account to view balance</p>
+      </div>
+      <div class="transactions">
+        <h2>Latest Loads</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Credit</th>
+              <th>A/c Balance</th>
+              <th>UTR/RRN</th>
+              <th>A/c No / UPI</th>
+            </tr>
+          </thead>
+          <tbody id="transactionTableBody">
+            <tr>
+              <td colspan="5">Select an account to view transactions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
